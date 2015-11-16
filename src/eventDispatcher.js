@@ -96,26 +96,6 @@ EventDispatcher.prototype = {
 
 
     /**
-     * offAll function.
-     * removes all callbacks from an event stack
-     * 
-     * @param {string} event  the event to unsubscribe from
-     * 
-     * @return {bool}         whether the callbacks were removed or not 
-     */
-    offAll: function (event)
-    {
-        // if the event does not exist, return false
-        if (! event in this.stack) return false
-
-        // remove the event from the stack
-        delete this.stack[event]
-
-        return true
-    },
-
-
-    /**
      * getEvents function.
      * returns all registered events.
      *
