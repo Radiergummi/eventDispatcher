@@ -22,3 +22,11 @@ function myFunction() {
   this.eventDispatcher.trigger('myOwnEventName', { message: 'foo' })
 }
 ````
+<br>
+Or remove the handlers again:  
+````javascript
+function myFunction() {
+  // do something
+  this.eventDispatcher.off('myOwnEventName')
+}
+````
